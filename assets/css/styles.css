@@ -1080,7 +1080,7 @@ h1 {
 }
 @media (max-width: 500px) {
   .team__intro {
-    max-width: 50%;
+    max-width: 100%;
   }
 }
 .team__intro .display {
