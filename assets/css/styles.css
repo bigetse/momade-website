@@ -434,7 +434,7 @@ footer {
   flex-direction: column;
   gap: 2rem;
   color: #18191B;
-  padding: 15rem 4rem;
+  padding: 15rem 6rem;
   align-items: center;
   justify-content: center;
   background-color: #B9FE4E;
@@ -444,7 +444,7 @@ footer {
   max-width: 65%;
   text-align: center;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .footer__intro {
     padding: 8rem 2rem;
   }
@@ -465,7 +465,7 @@ footer {
   gap: 1rem;
   max-width: 80%;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .footer__bottom-signoff {
     max-width: 100%;
   }
@@ -483,7 +483,7 @@ footer {
   grid-template-columns: 2fr 1fr 1fr;
   gap: 2rem;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .footer__bottom-column {
     display: flex;
     flex-direction: column;
@@ -607,14 +607,19 @@ h1 {
   flex-direction: column;
   gap: 1.5rem; /* 24px */
 }
+@media (max-width: 1279px) {
+  .hero__card {
+    padding: 1.5rem 1.5rem;
+  }
+}
 
 .hero__meta {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   width: 100%;
-  margin-top: 1rem; /* subtle separation from card */
-  color: #ffffff; /* white */
+  margin-top: 1rem;
+  color: #ffffff;
   opacity: 0.8;
 }
 
@@ -626,7 +631,7 @@ h1 {
 }
 
 .hero__greeting {
-  color: #ffffff; /* assuming white on image */
+  color: #ffffff;
   font-weight: 500;
 }
 
@@ -668,7 +673,7 @@ h1 {
 .services__intro .text-large {
   max-width: 60%;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .services__intro {
     max-width: 100%;
     min-height: auto;
@@ -728,7 +733,7 @@ h1 {
   gap: 2rem;
   position: relative;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .service-section__content {
     max-width: 100%;
   }
@@ -744,7 +749,7 @@ h1 {
   left: -160px;
   z-index: -1;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .services__intro img {
     display: none;
   }
@@ -842,7 +847,7 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .contact__inner {
     display: flex;
     flex-direction: column;
@@ -863,7 +868,7 @@ h1 {
   gap: 1.5rem;
   max-width: 60%;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .contact__intro-head {
     max-width: 100%;
   }
@@ -995,7 +1000,7 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .clients__summary {
     display: flex;
     flex-direction: column;
@@ -1010,6 +1015,12 @@ h1 {
   gap: 0.5rem;
   height: 100%;
 }
+@media (max-width: 1279px) {
+  .client__grid {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .client__grid-card {
   width: 200px;
@@ -1019,6 +1030,11 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
+}
+@media (max-width: 1279px) {
+  .client__grid-card img {
+    width: 100%;
+  }
 }
 
 .client__iconset {
@@ -1050,7 +1066,7 @@ h1 {
   gap: 6rem;
   justify-content: space-between;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .team__inner {
     gap: 1rem;
   }
@@ -1062,9 +1078,9 @@ h1 {
   gap: 1.5rem;
   max-width: 50%;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .team__intro {
-    max-width: 100%;
+    max-width: 50%;
   }
 }
 .team__intro .display {
@@ -1091,7 +1107,7 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
-@media (max-width: 1279px) {
+@media (max-width: 390px) {
   .team__grid {
     grid-template-columns: 1fr 1fr;
   }

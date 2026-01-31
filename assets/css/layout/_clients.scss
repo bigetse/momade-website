@@ -39,7 +39,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -52,6 +52,11 @@
   display: flex;
   gap: 0.5rem;
   height: 100%;
+
+  @media (max-width: $bp-tablet) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .client__grid-card {
@@ -61,6 +66,10 @@
   img {
     object-fit: cover;
     height: 100%;
+
+    @media (max-width: $bp-tablet) {
+      width: 100%;
+    }
   }
 }
 

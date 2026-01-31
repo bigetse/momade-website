@@ -10,7 +10,7 @@
   gap: 6rem;
   justify-content: space-between;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile) {
     gap: 1rem;
   }
 }
@@ -21,8 +21,8 @@
   gap: 1.5rem;
   max-width: 50%;
 
-  @media (max-width: $bp-tablet) {
-    max-width: 100%;
+  @media (max-width: $bp-mobile) {
+    max-width: 50%;
   }
 
   .display {
@@ -50,7 +50,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile) {
     grid-template-columns: 1fr 1fr;
   }
 }

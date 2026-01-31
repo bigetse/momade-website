@@ -25,7 +25,7 @@ footer {
   flex-direction: column;
   gap: 2rem;
   color: $neutral-100;
-  padding: 15rem 4rem;
+  padding: 15rem 6rem;
   align-items: center;
   justify-content: center;
   background-color: $green-30;
@@ -36,7 +36,7 @@ footer {
     text-align: center;
   }
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile) {
     padding: 8rem 2rem;
   }
 }
@@ -57,7 +57,7 @@ footer {
   gap: 1rem;
   max-width: 80%;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile) {
     max-width: 100%;
   }
 
@@ -75,7 +75,7 @@ footer {
   grid-template-columns: 2fr 1fr 1fr;;
   gap: 2rem;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile) {
     display: flex;
     flex-direction: column;
   }
