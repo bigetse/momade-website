@@ -1,0 +1,15 @@
+@use '../base/variables' as *;
+
+section {
+  scroll-margin-top: 5.5rem;
+  padding-block: 6rem;
+  overflow: hidden;
+
+  @media (max-width: $bp-tablet) {
+    padding-block: 4.5rem;
+  }
+
+  @media (max-width: $bp-mobile) {
+    padding-block: 3.5rem;
+  }
+}

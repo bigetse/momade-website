@@ -1,0 +1,118 @@
+@use 'variables' as *;
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Display */
+.display {
+  font-size: 5rem;
+  line-height: 1.2;
+
+  @media (max-width: $bp-tablet) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: $bp-mobile) {
+    font-size: 3rem;
+  }
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+/* Body text */
+
+.text-xlarge {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.text-large {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: $text-secondary; /* neutral-90 */
+}
+
+.text-small {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: $text-secondary; /* neutral-90 */
+}
+
+.display {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* Navigation & buttons */
+.nav-link,
+.button {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: $text-primary;
+}
+
+/* Responsive typography (Tablet) */
+@media (max-width: $bp-tablet) {
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+
+  .display {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive typography (Mobile) */
+@media (max-width: $bp-mobile) {
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.375rem; }
+  h4 { font-size: 1.25rem; }
+
+  .display {
+    font-size: 2rem;
+  }
+}

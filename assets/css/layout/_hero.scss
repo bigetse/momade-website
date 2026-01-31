@@ -1,0 +1,109 @@
+@use '../base/variables' as *;
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://res.cloudinary.com/dekvvbagz/image/upload/v1767554591/bg-image_gzdo8r.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+
+h1 {
+  color: $text-primary; /* neutral-100 */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  // background: rgba(0, 0, 0, 0.35);
+}
+
+.hero__background {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
+
+  @media (max-width: $bp-tablet) {
+    padding-inline: 1.25rem;
+  }
+
+  @media (max-width: $bp-mobile) {
+    padding-inline: 1rem;
+  }
+}
+
+
+/* ---------- Hero container RESPONSIVE ---------- */
+
+@media (max-width: $bp-mobile) {
+  .hero__container {
+    max-width: 100%;
+  }
+}
+/* ---------- Hero container RESPONSIVE values ---------- */
+
+.hero__card {
+  background-color: $bg-default;
+  max-width: 43.75rem;
+  padding: 2.5rem; /* 40px */
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* 24px */
+}
+
+.hero__meta {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+
+  width: 100%;
+  margin-top: 1rem; /* subtle separation from card */
+
+  color: $text-inverse; /* white */
+  opacity: 0.8;
+}
+
+.hero__location {
+  display: flex;
+  gap: 0.24rem;
+  align-items: baseline;
+  font-size: 12px;
+}
+
+.hero__greeting {
+  color: $text-inverse; /* assuming white on image */
+  font-weight: 500;
+}
+
+#hero-typing::after {
+  content: "|";
+  margin-left: 4px;
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+
+
+
+

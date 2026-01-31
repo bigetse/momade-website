@@ -1,0 +1,83 @@
+@use '../base/variables' as *;
+
+.clients__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  position: relative;
+  align-items: center;
+}
+
+.clients__tag {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.5rem 1rem; /* 8px top/bottom, 16px sides */
+  // border: 1px solid $neutral-20;
+  border-radius: 999px;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.5;
+  color: $green-70;
+  background: $green-30;
+}
+
+.clients__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .display {
+    color: $neutral-100;
+  }
+
+  h6 {
+    color: $orange-70;
+  }
+}
+
+.clients__summary{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+
+  @media (max-width: $bp-tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.client__grid{
+  display: flex;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.client__grid-card {
+  width: 200px;
+  height: 100%;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.client__iconset {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4rem;
+  align-items: center;
+}
+
+.client__iconset-wrap {
+  width: 120px;
+  height: 120px;
+}
+
+.client__iconset-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

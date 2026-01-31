@@ -1,0 +1,196 @@
+@use '../base/variables' as *;
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  /* Blur effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* Subtle translucent background */
+  background-color: rgba(255, 255, 255, 0.75);
+
+  /* Optional: subtle separation */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* Inner layout stays normal */
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4.5rem; /* adjust if needed */
+}
+
+ /* By default hide the mobile CTA */
+ .nav__cta-mobile {
+  display: none;
+}
+
+/* Navigation */
+.header__nav .nav__list {
+  display: flex;
+  gap: 4rem;
+}
+
+/* Make sure header content stays crisp */
+.site-header * {
+  backdrop-filter: none;
+}
+
+
+/* Logo */
+.header__logo a {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $text-primary;
+}
+
+/* Navigation */
+.header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2.5rem; /* 40px */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list a {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $text-primary;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
+}
+
+.nav__list a:hover {
+  color: $text-primary;
+}
+
+/* CTA */
+.header__cta {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo,
+.header__cta {
+  flex-shrink: 0;
+}
+
+/* Responsive adjustments */
+.nav-toggle {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1100;
+}
+
+.nav-toggle__bar {
+  width: 24px;
+  height: 2px;
+  background: $text-primary;
+  transition: all 0.3s ease;
+}
+
+/* ---------- TABLET & BELOW ---------- */
+@media (max-width: $bp-tablet) {
+
+  .header__nav {
+    overflow-y: auto;
+  }
+
+  /* Show hamburger */
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* Hide CTA on small screens */
+  /* Hide desktop CTA */
+  .header__cta {
+    display: none;
+  }
+
+  /* Show CTA inside mobile menu */
+  .nav__cta-mobile {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .nav__cta-mobile .btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+  }
+
+  /* Mobile nav container */
+  .header__nav {
+    position: fixed;
+    top: 4.5rem; /* same as header height */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 4.5rem);
+
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(20px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
+    z-index: 1000;
+  }
+
+  /* Stack menu vertically */
+  .header__nav .nav__list {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .header__nav .nav__list a {
+    font-size: 1.25rem;
+  }
+
+  /* When menu is open */
+  .header__nav.is-open {
+    transform: translateX(0);
+  }
+
+  /* Hamburger animation when open */
+  .nav-toggle.is-open .nav-toggle__bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .nav-toggle.is-open .nav-toggle__bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.is-open .nav-toggle__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+

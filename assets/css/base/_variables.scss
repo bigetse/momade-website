@@ -1,0 +1,99 @@
+/* Root size */
+html {
+  font-size: 16px;
+}
+
+/* Breakpoints */
+$bp-tablet: 1279px;
+$bp-mobile: 390px;
+
+/* Colours */
+$white: #ffffff;
+
+$neutral-100: #18191B;
+$neutral-90: #474C52;
+$neutral-60: #6A717A;
+$neutral-30: #BBBFC4;
+$neutral-20: #D6D9DB;
+$neutral-10: #F1F2F3;
+
+$green-100: #131E00;
+$green-90: #1F3300;
+$green-80: #2F4C00;
+$green-70: #446F01;
+$green-60: #5E9901;
+$green-50: #7DCB01;
+$green-30: #B9FE4E;
+$green-20: #E1FFB3;
+$green-10: #F5FFE6;
+
+$orange-100: #331C00;
+$orange-90: #663800;
+$orange-80: #985401;
+$orange-60: #DF7B01;
+$orange-70: #BC6801;
+$orange-50: #FE981B;
+$orange-40: #FEAF4D;
+$orange-20: #FFDDB3;
+$orange-30: #FEC680;
+$orange-10: #FFF4E6;
+
+$blue-100: #001933;
+$blue-90: #013165;
+$blue-80: #014A98;
+$blue-70: #015BBC;
+$blue-60: #33669D;
+$blue-50: #1B88FE;
+$blue-40: #4DA2FE;
+$blue-30: #80BDFE;
+$blue-20: #B3D7FF;
+$blue-10: #E6F2FF;
+
+/* Text colours */
+$text-primary: $neutral-100;
+$text-secondary: $neutral-90;
+$text-muted: $neutral-30;
+$text-inverse: $white;
+
+/* Button colours */
+$primary-bg: $green-50;
+$secondary-bg: $white;
+$tertiary-bg: $neutral-100;
+$primary-label: $green-100;
+$secondary-label: $green-90;
+$action-primary-hover: $green-50;
+$action-secondary-hover: $neutral-10;
+$action-tertiary-hover: $neutral-90;
+
+
+/* Background colours */
+$bg-default: $white;
+$bg-subtle: $neutral-10;
+$bg-muted: $neutral-20;
+$bg-dark: $neutral-100;
+
+/* Border colours */
+$border-default: $neutral-20;
+$border-muted: $neutral-10;
+
+/* Brand / accent */
+$accent-primary: $green-30;
+$accent-primary-hover: $green-60;
+$accent-primary-strong: $green-70;
+
+$accent-secondary: $orange-50;
+$accent-secondary-soft: $orange-20;
+$accent-secondary-strong: $orange-80;
+
+/* Status (future-proofing) */
+$status-success: $green-50;
+$status-warning: $orange-50;
+$status-info: $neutral-90;
+
+:root {
+  --green-10: #F5FFE6;
+  --green-20: #E1FFB3;
+  --green-70: #446F01;
+  --neutral-10: #F1F2F3;
+  --orange-80: #985401;
+}
